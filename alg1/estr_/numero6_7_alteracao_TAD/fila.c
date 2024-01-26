@@ -15,7 +15,8 @@ typedef struct fila {
 
 
 Fila *criar() {
-    Fila *f = (Fila*)malloc(sizeof(Fila));f->qtd = 0;
+    Fila *f = (Fila*)malloc(sizeof(Fila));
+    f->qtd = 0;
     f->inicio = NULL;
     f->fim = NULL;
     return f;
@@ -54,7 +55,8 @@ int remover(Fila *f) {
 }
 
 int filaVazia(Fila *f) {
-    if (f == NULL) return 2;if (f->qtd == 0)
+    if (f == NULL) return 2;
+    if (f->qtd == 0)
     return 0;
     else
     return 1;
